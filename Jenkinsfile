@@ -17,14 +17,14 @@ pipeline{
         NEXUS_LOGIN = 'nexuslogin'
     }
 
-    stages{
-        stage{
-            steps{
+    stages {
+        stage {
+            steps {
                 sh 'mvn -s settings.xml -DskipTests install'
             }
         }
 
-        
+
 
     }
 }
