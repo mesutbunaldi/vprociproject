@@ -30,11 +30,7 @@ pipeline {
             }
         }
 
-        stage('Test'){
-            steps {
-                sh 'mvn -X -s settings.xml test'
-            }
-        }
+        
 
         stage('Checkstyle Analysis'){
             steps {
